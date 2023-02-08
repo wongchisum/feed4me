@@ -1,0 +1,23 @@
+.subscribe-list-wrap {
+  padding: 8px 8px;
+  &-header {
+    padding: 8px 12px;
+  }
+  .subscribe-list-item {
+    cursor: pointer;
+    transition: 0.25s;
+    padding: 4px 4px;
+    border-radius: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover,
+    &-active {
+      background: #6096b4;
+      color: #fff;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+  }
+}
